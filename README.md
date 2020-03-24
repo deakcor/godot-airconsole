@@ -1,4 +1,4 @@
-# Hodot Airconsole
+# Godot Airconsole
 A Godot node plugin for AirConsole API
 
 Copy/clone the folder godot-airconsole to your addons folder in your godot project.
