@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kbfm4WVI8JwzxH-oPNEx7ytJPjI327TeameFRlXaGANI09bjdqOp1s6Mo0zx4Qd5xFbeoa92Vep9NgXsUl5eur4wzfRDDQ6-h0VmpAiPmrNXl-hZrUXPhu9M8I1CCX9G-xM-LUSGj5gO1lGBz47Q0w" charset="UTF-8"></script><script
+      type="text/javascript"
+      src="https://www.airconsole.com/api/airconsole-1.7.0.js"
+    ></script>
+    <script>
+      var airconsole;
+
+      var x = 0;
+      var y = 0;
+
+      /**
+       * Sets up the communication to the screen.
+       */
+      function init() {
+        airconsole = new AirConsole({ orientation: "landscape" });
+      }
+
+      init();
+
+      function press(button, pressed) {
+        airconsole.message(AirConsole.SCREEN, {
+          button: button,
+          pressed: pressed
+        });
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
+
+      .column-large {
+        flex: 2;
+      }
+      .button {
+        border: 3px solid black;
+        background: gray;
+        color: white;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .height-30 {
+        height: 33vh;
+      }
+      .height-50 {
+        height: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <div
+          class="button height-30"
+          ontouchstart="press('up', true)"
+          ontouchend="press('up', false)"
+          onmousedown="press('up', true)"
+          onmouseup="press('up', false)"
+        >
+          UP
+        </div>
+        <div class="row">
+          <div class="column">
+            <div
+              class="button height-30"
+              ontouchstart="press('left', true)"
+              ontouchend="press('left', false)"
+              onmousedown="press('left', true)"
+              onmouseup="press('left', false)"
+            >
+              LEFT
+            </div>
+          </div>
+          <div class="column">
+            <div
+              class="button height-30"
+              ontouchstart="press('right', true)"
+              ontouchend="press('right', false)"
+              onmousedown="press('right', true)"
+              onmouseup="press('right', false)"
+            >
+              RIGHT
+            </div>
+          </div>
+        </div>
+        <div
+          class="button height-30"
+          ontouchstart="press('down', true)"
+          ontouchend="press('down', false)"
+          onmousedown="press('down', true)"
+          onmouseup="press('down', false)"
+        >
+          DOWN
+        </div>
+      </div>
+      <div class="column column-small">
+        <div
+          class="button height-50"
+          ontouchstart="press('action', true)"
+          ontouchend="press('action', false)"
+          onmousedown="press('action', true)"
+          onmouseup="press('action', false)"
+        >
+          ACTION
+        </div>
+        <div
+          class="button height-50"
+          ontouchstart="press('jump', true)"
+          ontouchend="press('jump', false)"
+          onmousedown="press('jump', true)"
+          onmouseup="press('jump', false)"
+        >
+          JUMP
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
