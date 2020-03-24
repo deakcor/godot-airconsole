@@ -14,4 +14,4 @@ After exporting your godot project to HTML. rename the .html file to `screen.htm
 and `controller.html` if you use a godot project to make the controller.
 
 ### /!\ You'll also need to add this to your .html export.
-<script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
+`<script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>`
