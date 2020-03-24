@@ -1,7 +1,7 @@
 # Godot Airconsole
 A Godot node plugin for AirConsole API
 
-##Setup
+## Setup
 
 Copy/clone the folder godot-airconsole to your addons folder in your godot project.
 
@@ -16,7 +16,7 @@ You will maybe need to modify a line from this file about AirConsole init to add
 
 Look at the [AirConsole API documentation](https://developers.airconsole.com/api/api-1-7-0/AirConsole.html) for more informations.
 
-##Export
+## Export
 
 After exporting your godot project to HTML. rename the .html file to `screen.html` for the game 
 and `controller.html` if you use a godot project to make the controller.
