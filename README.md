@@ -21,5 +21,5 @@ Look at the [AirConsole API documentation](https://developers.airconsole.com/api
 After exporting your godot project to HTML. rename the .html file to `screen.html` for the game 
 and `controller.html` if you use a godot project to make the controller.
 
-### /!\ You'll also need to add this to your .html export.
+### /!\ You'll also need to add this to your html export by adding it in the Head include section of html export settings.
 `<script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>`
